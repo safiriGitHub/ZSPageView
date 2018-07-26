@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "ZSPageView"
+  s.name         = "ZSPageViewPP"
   s.version      = "0.0.1"
   s.summary      = "组件化控件-适用于引导页，banner等"
 
