@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://gitee.com/safiri/ZSPageView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "http://admin@192.168.1.70:10101/r/ZSPageView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
