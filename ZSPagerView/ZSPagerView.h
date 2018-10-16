@@ -14,6 +14,7 @@
 #import "ZSPagerViewTransformer.h"
 #import "ZSPageControl.h"
 #import "ZSPagerModel.h"
+#import "ZSPagerViewCell.h"
 
 IB_DESIGNABLE
 @class ZSPagerViewTransformer;
