@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CarNewWZRemindBannerCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hR5-Og-ew3">
+                        <rect key="frame" x="11" y="10" width="353" height="84"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_wzRemind_bg1" translatesAutoresizingMaskIntoConstraints="NO" id="OMK-Aw-ckr">
+                                <rect key="frame" x="0.0" y="0.0" width="353" height="84"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_wzRemind_tishi" translatesAutoresizingMaskIntoConstraints="NO" id="pCW-zH-kCa">
+                                <rect key="frame" x="240" y="8" width="106" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="1q1-Pq-khS"/>
+                                    <constraint firstAttribute="height" constant="65" id="AKJ-GJ-KnF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6Y-uf-DeO">
+                                <rect key="frame" x="334" y="0.0" width="13" height="22"/>
+                                <state key="normal" image="car_wzRemind_close"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您鲁A****的爱车有2条新违章" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-RI-w9O">
+                                <rect key="frame" x="11" y="20" width="212" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.3921568627" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果该违章已处理，请忽略本消息。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOV-on-bNq">
+                                <rect key="frame" x="11" y="42" width="197" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.62352941179999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OMK-Aw-ckr" secondAttribute="bottom" id="94j-zI-eQU"/>
+                            <constraint firstAttribute="trailing" secondItem="s6Y-uf-DeO" secondAttribute="trailing" constant="6" id="BdF-di-9wA"/>
+                            <constraint firstItem="pCW-zH-kCa" firstAttribute="top" secondItem="hR5-Og-ew3" secondAttribute="top" constant="8" id="En2-d7-YKw"/>
+                            <constraint firstAttribute="trailing" secondItem="pCW-zH-kCa" secondAttribute="trailing" constant="7" id="Io7-bv-4KI"/>
+                            <constraint firstItem="hOV-on-bNq" firstAttribute="leading" secondItem="hR5-Og-ew3" secondAttribute="leading" constant="11" id="Kkg-ct-k7N"/>
+                            <constraint firstItem="lyP-RI-w9O" firstAttribute="leading" secondItem="hR5-Og-ew3" secondAttribute="leading" constant="11" id="Ovi-wi-FOR"/>
+                            <constraint firstItem="s6Y-uf-DeO" firstAttribute="top" secondItem="hR5-Og-ew3" secondAttribute="top" id="SYe-fy-VqX"/>
+                            <constraint firstItem="OMK-Aw-ckr" firstAttribute="top" secondItem="hR5-Og-ew3" secondAttribute="top" id="dnn-4N-6Ha"/>
+                            <constraint firstItem="OMK-Aw-ckr" firstAttribute="leading" secondItem="hR5-Og-ew3" secondAttribute="leading" id="j4c-cU-K7G"/>
+                            <constraint firstAttribute="trailing" secondItem="OMK-Aw-ckr" secondAttribute="trailing" id="ogS-I7-eKw"/>
+                            <constraint firstItem="hOV-on-bNq" firstAttribute="top" secondItem="lyP-RI-w9O" secondAttribute="bottom" constant="2" id="x7H-5D-uZN"/>
+                            <constraint firstItem="lyP-RI-w9O" firstAttribute="top" secondItem="hR5-Og-ew3" secondAttribute="top" constant="20" id="yS8-Mq-IHb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hR5-Og-ew3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="11" id="I9l-a9-OsW"/>
+                <constraint firstAttribute="trailing" secondItem="hR5-Og-ew3" secondAttribute="trailing" constant="11" id="O9s-BL-ZN0"/>
+                <constraint firstAttribute="bottom" secondItem="hR5-Og-ew3" secondAttribute="bottom" constant="10" id="bOt-Ap-eOD"/>
+                <constraint firstItem="hR5-Og-ew3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="uc0-Hu-fXy"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundImageView" destination="OMK-Aw-ckr" id="iOJ-bR-CSW"/>
+                <outlet property="hintLabel" destination="lyP-RI-w9O" id="DcJ-wj-maf"/>
+                <outlet property="remindCloseButton" destination="s6Y-uf-DeO" id="n5w-sj-l6E"/>
+                <outlet property="remindGifImageView" destination="pCW-zH-kCa" id="JAL-ap-qW7"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="car_wzRemind_bg1" width="352" height="84"/>
+        <image name="car_wzRemind_close" width="13" height="13"/>
+        <image name="car_wzRemind_tishi" width="106" height="65"/>
+    </resources>
+</document>

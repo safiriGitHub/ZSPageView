@@ -7,6 +7,7 @@
 //
 
 #import "ZSPagerModel.h"
+#import <UIKit/UIKit.h>
 
 @implementation ZSPagerModel
 

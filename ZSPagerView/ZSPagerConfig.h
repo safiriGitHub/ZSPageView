@@ -9,14 +9,14 @@
 #ifndef ZSPagerConfig_h
 #define ZSPagerConfig_h
 
-@class ZSPagerView,ZSPagerViewCell;
+@class ZSPagerView;
 @protocol ZSPagerViewDataSource <NSObject>
 
 /// 请求您的数据源对象，以查看分页视图中的项目数量。
 - (NSInteger)numberOfItemsInPagerView:(ZSPagerView *)pagerView;
 
 /// 根据指定index传入相应的cell
-- (ZSPagerViewCell *)pagerView:(ZSPagerView *)pagerView cellForItemAtIndex:(NSInteger)index;
+- (UICollectionViewCell *)pagerView:(ZSPagerView *)pagerView cellForItemAtIndex:(NSInteger)index;
 
 @end
 
@@ -36,10 +36,10 @@
 - (void)pagerView:(ZSPagerView *)pagerView didSelectItemAtIndex:(NSInteger)index;
 
 /// 告诉委托，指定的单元格将被显示
-- (void)pagerView:(ZSPagerView *)pagerView willDisplayCell:(ZSPagerViewCell *)cell forItemAtIndex:(NSInteger)index;
+- (void)pagerView:(ZSPagerView *)pagerView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndex:(NSInteger)index;
 
 /// 告诉委托，指定的单元格将被删除
-- (void)pagerView:(ZSPagerView *)pagerView didEndDisplayingCell:(ZSPagerViewCell *)cell forItemAtIndex:(NSInteger)index;
+- (void)pagerView:(ZSPagerView *)pagerView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndex:(NSInteger)index;
 
 /// 当即将开始滚动时，告诉委托
 - (void)pagerViewWillBeginDragging:(ZSPagerView *)pagerView;

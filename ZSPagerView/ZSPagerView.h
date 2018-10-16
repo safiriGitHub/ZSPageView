@@ -10,7 +10,6 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "ZSPagerViewCell.h"
 #import "ZSPagerConfig.h"
 #import "ZSPagerViewTransformer.h"
 #import "ZSPageControl.h"
@@ -104,7 +103,7 @@ IB_DESIGNABLE
 
 - (void)registerNib:(UINib *)nib forCellWithReuseIdentifier:(NSString *)identifier;
 
-- (ZSPagerViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier atIndex:(NSInteger)index;
+- (UICollectionViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier atIndex:(NSInteger)index;
 
 - (void)reloadData;
 
@@ -112,5 +111,5 @@ IB_DESIGNABLE
 - (void)deselectItemAtIndex:(NSInteger)index animated:(BOOL)animated;
 - (void)scrollToItemAtIndex:(NSInteger)index animated:(BOOL)animated;
 
-- (NSInteger)indexForCell:(ZSPagerViewCell *)cell;
+- (NSInteger)indexForCell:(UICollectionViewCell *)cell;
 @end

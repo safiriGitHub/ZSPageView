@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   ZSPagerView是一个优雅的屏幕幻灯片库，主要以UICollectionView实现。它非常有助于制作横幅，产品展示，欢迎/引导页面，屏幕/视图控制器滑块。
                    DESC
 
-  s.homepage     = "https://gitee.com/safiri/ZSPageView"
+  s.homepage     = "https://gitee.com/safiri"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://admin@192.168.1.70:10101/r/ZSPageView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "http://zhangshuai@192.168.1.70:10101/r/iOS/cocoaPods/ZSPageView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

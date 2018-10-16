@@ -115,7 +115,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     self.dequeingSection = indexPath.section;
-    ZSPagerViewCell *cell = [self.dataSource pagerView:self cellForItemAtIndex:indexPath.item];
+    UICollectionViewCell *cell = [self.dataSource pagerView:self cellForItemAtIndex:indexPath.item];
     return cell;
 }
 
@@ -156,7 +156,7 @@
         return;
     }
     NSInteger index = indexPath.item % self.numberOfItems;
-    [self.delegate pagerView:self willDisplayCell:(ZSPagerViewCell *)cell forItemAtIndex:index];
+    [self.delegate pagerView:self willDisplayCell:(UICollectionViewCell *)cell forItemAtIndex:index];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -164,7 +164,7 @@
         return;
     }
     NSInteger index = indexPath.item % self.numberOfItems;
-    [self.delegate pagerView:self didEndDisplayingCell:(ZSPagerViewCell *)cell forItemAtIndex:index];
+    [self.delegate pagerView:self didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndex:index];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -225,15 +225,10 @@
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:identifier];
 }
 
-- (ZSPagerViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier atIndex:(NSInteger)index {
+- (UICollectionViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier atIndex:(NSInteger)index {
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:self.dequeingSection];
     UICollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
-    if ([cell isKindOfClass:ZSPagerViewCell.class]) {
-        return (ZSPagerViewCell *)cell;
-    }else {
-        //fatalError("Cell class must be subclass of FSPagerViewCell");
-        return nil;
-    }
+    return cell;
 }
 
 - (void)reloadData {
@@ -265,7 +260,7 @@
     self.possibleTargetingIndexPath = nil;
 }
 
-- (NSInteger)indexForCell:(ZSPagerViewCell *)cell {
+- (NSInteger)indexForCell:(UICollectionViewCell *)cell {
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     if (indexPath) {
         return indexPath.item;
