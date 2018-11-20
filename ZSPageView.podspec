@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZSPageView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "组件化控件-适用于引导页，banner等"
 
   # This description is used to generate tags and improve search results.

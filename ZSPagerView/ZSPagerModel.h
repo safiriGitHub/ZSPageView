@@ -11,9 +11,9 @@
 /// general for banner
 @interface ZSPagerModel : NSObject
 
-/// 优先加载本地的imageName 未使用
-//@property (nonatomic ,copy) NSString *imageName;
-/// 若设置了imageName，不会加载url所指图片
+/// 本地的imageName
+@property (nonatomic ,copy) NSString *imageName;
+/// 图片url
 @property (nonatomic ,strong) NSString *imageUrlString;
 /// placeHolder imageName
 @property (nonatomic ,copy) NSString *placeHolderImageName;
@@ -21,5 +21,7 @@
 @property (nonatomic ,copy) NSString *webUrlString;
 /// 是否可以访问web地址: webUrlString
 @property (nonatomic ,assign) BOOL canAccessWebUrl;
+/// pager介绍
+@property (nonatomic, copy) NSString *introduceString;
 
 @end
